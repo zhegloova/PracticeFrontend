@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/53a4ab4f98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="products">
+    <div class="product" id="product1" data-price="10" draggable="true">price: $20</div>
+    <div class="product" id="product2" data-price="20" draggable="true">price: $33</div>
+    <div class="product" id="product3" data-price="40" draggable="true">price: $12</div>
+    <div class="product" id="product4" data-price="50" draggable="true">price: $10</div>
+  </div>
+  <div class="cart" id="cart">
+    <h3>Bought items</h3>
+    <p>Price: <span id="total">0 </span> $</p>
+    <div id="box">Pay</div>
+  </div>
+  <script src="script2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

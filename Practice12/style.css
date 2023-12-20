@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.notification-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.notification-icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#notification-counter {
+    font-size: 14px;
+}
+
+.notification-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.list-container {
+    margin-top: 50px;
+    margin-left: 20px;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 300px;
+  height: 150px;
+  border: 3px solid red;
+  padding: 16px;
+  margin: 16px;
+}

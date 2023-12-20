@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        height: 200vh; /* Добавлено для демонстрации прокрутки */
+      }
+
+      .parallax-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .parallax-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("parallaxImage.jpg") center/cover fixed;
+        transform: translateZ(0);
+        will-change: transform;
+      }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+    <title>Parallax Effect</title>
+  </head>
+  <body>
+    <div class="parallax-container">
+      <div class="parallax-layer" id="parallax-layer"></div>
+      <div class="content">
+        <h1>Параллакс эффект</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illum
+          dolorum accusantium, maxime vel quae commodi modi beatae enim! Debitis
+          cum eius explicabo? Odit blanditiis nemo unde repellendus minima et?
+        </p>
+      </div>
+    </div>
+
+    <!-- Дополнительный контент для прокрутки -->
+    <div style="padding: 20px; background-color: #f0f0f0">
+      <p>More content...</p>
+      <p>Keep scrolling...</p>
+      <p>Even more content...</p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var parallaxLayer = document.getElementById("parallax-layer");
+
+        window.addEventListener("scroll", function () {
+          var scrollPosition = window.scrollY;
+          parallaxLayer.style.transform =
+            "translateY(" + scrollPosition * 0.5 + "px)";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Уведомления</title>
+</head>
+<body>
+    <div class="notification-container">
+        <p>Уведомления </p>
+        <div class="notification-icon">
+            <div id="notification-counter">0</div>
+        </div>
+        <div class="notification-content">
+            <!-- Здесь будут появляться новые уведомления -->
+        </div>
+    </div>
+
+    <div class="list-container">
+        <h2>Создание списка</h2>
+        <button onclick="createList()">Создать список</button>
+        <ul id="dynamic-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
